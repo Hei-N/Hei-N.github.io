@@ -1,0 +1,9 @@
+import{j as e}from"./index-uuvCudS8.js";const i=`Study Bot
+Local study assistant
+
+Provider: Ollama
+Model: qwen3:4b
+Course: General
+Chat: Untitled
+Mode: Teach
+Reasoning: Fast`,o=[{who:"you",text:"/mode homework"},{who:"sys",text:"Teaching mode changed to Homework."},{who:"you",text:"A car starts from rest and accelerates at 3 m/s^2 for 4 seconds. How far does it go? Help me solve it."},{who:"bot",text:"Here's a step-by-step solution to your homework problem. I'll guide you through the reasoning and calculations without doing the work for you, as requested."},{who:"cut",text:"shortened"},{who:"bot",text:"- **Given:**\n  - Initial velocity (`u`) = 0 m/s (starts from rest)\n  - Acceleration (`a`) = 3 m/s²\n  - Time (`t`) = 4 seconds"},{who:"cut",text:"shortened"},{who:"bot",text:"Since `u = 0`, this simplifies to:  \n**`s = (1/2) a t²`**"},{who:"cut",text:"shortened"},{who:"bot",text:"**Answer: The car travels 24 meters.**"},{who:"you",text:"/quit"},{who:"sys",text:"Goodbye."}];function h({compact:r=!1}){const a=r?[...o.slice(0,6),o[8],o[9]]:o;return e.jsxs("figure",{className:"tr",children:[e.jsxs("div",{className:"tr-win",tabIndex:0,"aria-label":"StudyBot terminal session",children:[e.jsx("pre",{className:"tr-head",children:i}),e.jsx("div",{className:"tr-body",children:a.map((t,s)=>t.who==="cut"?e.jsxs("p",{className:"tr-cut",children:["[ ",t.text," ]"]},s):e.jsxs("p",{className:`tr-${t.who}`,children:[t.who==="you"&&e.jsx("span",{className:"tr-p",children:"You > "}),t.who==="bot"&&a.slice(0,s).reverse().find(n=>n.who!=="cut")?.who==="you"&&e.jsx("span",{className:"tr-p",children:"Bot > "}),t.text]},s))})]}),e.jsx("figcaption",{children:"A real terminal session, running locally on qwen3:4b. In Homework mode the model is supposed to guide rather than solve, and here it still gave the final answer. Making a small model follow the modes reliably is ongoing work."})]})}export{h as default};
