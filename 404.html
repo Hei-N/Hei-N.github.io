@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hein Htet Aung</title>
+<meta name="robots" content="noindex">
+<script>
+  // Site routes live in the hash. Send /atlas (or /atlas/) to /#atlas; the app shows About for anything it doesn't know.
+  var token = location.pathname.replace(/^\/+|\/+$/g, "").split("/").pop();
+  location.replace("/" + (token ? "#" + encodeURIComponent(token) : ""));
+</script>
+</head>
+<body style="font-family: system-ui, sans-serif; padding: 40px;">
+<p>Hein Htet Aung's portfolio has moved to <a href="/">hei-n.github.io</a>.</p>
+</body>
+</html>

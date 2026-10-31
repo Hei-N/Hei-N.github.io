@@ -1,4 +1,4 @@
-import{j as e}from"./index-Of9u82Hw.js";const i=`Study Bot
+import{j as e}from"./index-POzoj5ZO.js";const i=`Study Bot
 Local study assistant
 
 Provider: Ollama
